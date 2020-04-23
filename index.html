@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <title>Weather App!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
+
+
+
+    
+
+</head>
+
+<body>
+    <div class="container weatherbox">
+
+        
+        <div class="flex-container">
+            <div class="chatbot" id ="chatbot_one_id">
+                <div class="chatbotvis" id = "chatVisibility">
+
+                    <iframe class ="frame" src="https://healthbotwebchatcontainersample1.azurewebsites.net/" width="350" height="400">
+                    </iframe>
+                </div>
+                
+                <div class="btndiv">
+                    <button type="button" onclick="clicked()" class="btn btn-outline-danger">COVID-19 FAQs</button>
+
+                </div>
+
+        </div>
+            <div class="weather-card" id = "weather_card_id" >
+                <div class="title">
+                    <p style="font-size:large;">WEATHER</p>
+                </div>
+                <div class="notification"></div>
+                <div class="weather-container">
+                    <div class="icon-image">
+                        <img src="icons/01.png">
+                    </div>
+                    <div class="temperature">
+                        <p style="font-size: 40px;">-°<span style="font-size: 20px;">F</span></p>
+                    </div>
+                    <div class="weather-description">
+                        <p>-</p>
+                    </div>
+                    <div class="location">
+                        <p style="font-size: 25px;">-</p>
+                    </div>
+                    <div class="sunrise">
+                        <p></p>
+                    </div>
+                    <div class="sunset">
+                        <p></p>
+                    </div>
+                    <div class="time-difference">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chatbot2" id = "chatbot_two_id">
+                <div class="chatbotvis" id = "chatVisTwo">
+                    <iframe class ="frame" src="https://healthbotcontainersamplebrafay.azurewebsites.net/" width="350" height="400">
+                    </iframe>
+                </div>
+                
+                <div class="btndiv">
+                    <button type="button" onclick= "secondClicked()" class="btn btn-outline-danger">COVID-19 Symptom Checker</button>
+
+                </div>
+
+        </div>
+        </div>
+            
+                
+                
+            
+        
+              
+           
+            
+            
+            
+        </div>
+
+    
+            
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
