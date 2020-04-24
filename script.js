@@ -83,7 +83,7 @@ function showError(error) {
 const key = "2f299bff0bc2bb868192851933712965";
 
 function getWeather(latitude, longitude) {
-    let api = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
+    let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
     console.log(api);
     fetch(api)
         .then(function (response) {
