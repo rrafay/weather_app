@@ -45,6 +45,6 @@ var serveStatic = require('serve-static');
 var app = connect();
 
 app.use(serveStatic(__dirname, {'index': ['index.html']}));
-app.listen(8080);
+app.listen(80);
 
 //hi rafay
