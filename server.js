@@ -39,12 +39,11 @@
 
 
 
-var connect = require('connect');
-var serveStatic = require('serve-static');
+// var connect = require('connect');
+// var serveStatic = require('serve-static');
 
-var app = connect();
+// var app = connect();
 
-app.use(serveStatic(__dirname, {'index': ['index.html']}));
-app.listen(1337);
+// app.use(serveStatic(__dirname, {'index': ['index.html']}));
+// app.listen(1337);
 
-//hi rafay
