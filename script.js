@@ -80,11 +80,13 @@ function showError(error) {
     notificationElement.innerHTML = `<p> ${error.message} </p> `;
 };
 
+// API key
 const key = "2f299bff0bc2bb868192851933712965";
 
+// fetch data from the data
 function getWeather(latitude, longitude) {
     let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
-    console.log(api);
+    //console.log(api);
     fetch(api)
         .then(function (response) {
             var data = response.json();
@@ -113,12 +115,13 @@ function getWeather(latitude, longitude) {
 
 };
 
+// Convert Kelvin values to Farenheit
 function kelvinF(temp){
     return ((temp - 273.15) *(9/5) + 32).toPrecision(2)
 };
 
+// send the completed object element back to HTML for display
 function displayWeather() {
-    // send the completed object element back to HTML for display 
     iconElement.innerHTML = `<img src="icons/${weather_object.iconId}.png">`;
     temperatureElement.innerHTML = `${weather_object.temperature.value} °<span>F</span>`;
     weatherDescriptionElement.innerHTML = weather_object.description;
@@ -129,42 +132,42 @@ function displayWeather() {
 };
 
 
+// Convert Unix time to 12-hour time 
 function timeConversion(time){
     return (new Date(time * 1000).toLocaleTimeString())
 };
 
+// Calculate day time hours in a day
 function dayTime(rise, set){
     return (Math.abs(set - rise) / (3600)).toPrecision(3)
-    //let time = set - rise; 
-    //return (new Date(time * 1000).getHours())
-};
-
-// var sec = 1425909686;
-// var date = new Date(sec * 1000);
-// var timestr = date.toLocaleTimeString();
-
-// console.log(timestr);
-
-
-function clicked(){
-    var bot = document.getElementById("chatVisibility");
-    if(bot.style.display === "none"){
-        bot.style.display = "block";
-    }
-    else{
-        bot.style.display = "none";
-    }
-    
     
 };
 
-function secondClicked(){
-    var bot_2 = document.getElementById("chatVisTwo");
-    if(bot_2.style.display === "none"){
-        bot_2.style.display = "block";
-    }
-    else{
-        bot_2.style.display = "none";
-    }
-};
+
+
+
+ // unused features in the weather app
+ 
+// // Hide and display the first button on the right of the weather card
+// function clicked(){
+//     var bot = document.getElementById("chatVisibility");
+//     if(bot.style.display === "none"){
+//         bot.style.display = "block";
+//     }
+//     else{
+//         bot.style.display = "none";
+//     }
+ 
+// };
+
+// // Hide and display the second button on the left side of the weather card
+// function secondClicked(){
+//     var bot_2 = document.getElementById("chatVisTwo");
+//     if(bot_2.style.display === "none"){
+//         bot_2.style.display = "block";
+//     }
+//     else{
+//         bot_2.style.display = "none";
+//     }
+// };
 

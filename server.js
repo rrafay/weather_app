@@ -5,7 +5,7 @@ var serveStatic = require('serve-static');
 
 connect()
     .use(serveStatic(__dirname))
-    .listen(80, () => console.log('Server running on 8080...'));
+    .listen(80, () => console.log('Server running on port 80'));
 
 
 
