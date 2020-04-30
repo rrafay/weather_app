@@ -127,7 +127,7 @@ function displayWeather() {
     weatherDescriptionElement.innerHTML = weather_object.description;
     locationElement.innerHTML = `${weather_object.location}, ${weather_object.country}`;
     sunriseElement.innerHTML = `<span><img src="icons/sunup.png" style = "width:8%;"> Sunrise: </span>${weather_object.sunrise}`;
-    sunsetElement.innerHTML = `<span><img src="icons/sundown.png" style = "width:8%;">Sunset: </span>${weather_object.sunset}`;
+    sunsetElement.innerHTML = `<span><img src="icons/sundown.png" style = "width:8%;"> Sunset: </span>${weather_object.sunset}`;
     timediffElement.innerHTML = `<span>Daytime: </span>${weather_object.daytime}<span> hrs</span>`;
 };
 
@@ -147,7 +147,7 @@ function dayTime(rise, set){
 
 
  // unused features in the weather app
- 
+
 // // Hide and display the first button on the right of the weather card
 // function clicked(){
 //     var bot = document.getElementById("chatVisibility");
