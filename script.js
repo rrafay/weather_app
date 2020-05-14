@@ -160,7 +160,7 @@ function dayTime(rise, set){
  
 // };
 
-// // Hide and display the second button on the left side of the weather card
+// Hide and display the second button on the left side of the weather card
 // function secondClicked(){
 //     var bot_2 = document.getElementById("chatVisTwo");
 //     if(bot_2.style.display === "none"){
@@ -170,4 +170,3 @@ function dayTime(rise, set){
 //         bot_2.style.display = "none";
 //     }
 // };
-

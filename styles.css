@@ -1,6 +1,6 @@
 body{
-    background-color: rgba(241, 241, 241, 0.664);
-    
+    background-color: rgb(255, 255, 255);
+    /* background: linear-gradient(0deg, rgba(120,9,9,0.9710259103641457) 0%, rgba(0,0,0,1) 100%); */
 }
 p{
     font-family: 'Varela', sans-serif;
@@ -8,7 +8,7 @@ p{
 
 .weather-card{
     
-    background-color: rgba(243, 148, 131, 0.767);
+    background-color: rgb(144, 223, 255);
     padding: 2%;
     display: block; 
     margin: auto; 
@@ -21,6 +21,7 @@ p{
     0 100px 80px rgba(0, 0, 0, 0.12);
     border-radius: 5px;
     text-align: center;
+    
     
     
     
@@ -45,21 +46,36 @@ p{
 
 .chatbot2{
     padding-bottom: 10px;
+    display: block; 
+    margin: auto;
+    padding-top: 25px;
     /* display: flex; */
 }
 .btndiv{
     padding-top: 10px;
+    
 }
 
+.btn{
+    border-radius: 40px;
+    background:linear-gradient(to right, #ff6666, #ff99cc);
+    border-color:#ff99cc;
+    color: white;
+    padding:none;
+
+}
 .chatbotvis{
     display: none;
 }
 
-.btn:hover {background: rgb(167, 59, 59);}
+.btn:hover {
+    background: #ff6161; 
+    border-color:#ff6161;
+}
 
 .flex-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
   }
 
@@ -84,3 +100,6 @@ p{
         
     }
 }
+
+
+
