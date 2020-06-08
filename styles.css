@@ -27,21 +27,10 @@ p{
     
 }
 
-.frame{
-    
-    display: block; 
-    margin: auto;
-    margin-top: 20px;
-    padding-left: 10px;
-    border-radius: 8px;
-    overflow: scroll;
-    box-shadow: 2px 2px 4px rgb(53, 53, 53);
-    
-}
 
-.chatbot{
+
+/* .chatbot{
     padding-bottom: 10px;
-    /* display: flex; */
 }
 
 .chatbot2{
@@ -49,7 +38,6 @@ p{
     display: block; 
     margin: auto;
     padding-top: 25px;
-    /* display: flex; */
 }
 .btndiv{
     padding-top: 10px;
@@ -71,7 +59,7 @@ p{
 .btn:hover {
     background: #ff6161; 
     border-color:#ff6161;
-}
+} */
 
 .flex-container {
     display: flex;
@@ -99,10 +87,7 @@ p{
         margin: auto;
         
     }
-    .botbox{
-        width: 250;
-        height: 400;
-    }
+    
 }
 
 
