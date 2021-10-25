@@ -1,6 +1,6 @@
 # Weather app
 
-A Javascript weather app that fetches data from OpenWeatherMap API and displays the weather.
+A Javascript [weather app](https://rrafay.github.io/weather_app/) that fetches data from OpenWeatherMap API and displays the weather.
 
 ## Description 
 The app displays weather for the user's location using location data from the user's web browser. In addition to the temperature, the app also displays the 
